@@ -1,0 +1,14 @@
+{
+    "name": "react-example",
+    "version": "1.0.0",
+    "description": "React Example",
+    "main": "index.html",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "author": "Suomaa",
+    "license": "MIT",
+    "devDependencies": {
+        "express": "^4.15.3"
+    }
+}
