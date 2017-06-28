@@ -1,0 +1,32 @@
+.none {
+    display: none !important;
+}
+
+body {
+    background: rgba(177, 182, 186, 0.38);
+    font-family: sans-serif;
+}
+
+p {
+    margin: 0 0 5px;
+}
+
+.article {
+    background: #66B2E6;
+    border: 1px solid rgba(0, 89, 181, 0.82);
+    width: 600px;
+    margin: 0 0 5px;
+    box-shadow: 2px 2px 5px -1px rgb(0, 81, 202);
+    padding: 3px 5px;
+    color: #F8F8FA;
+}
+
+.news__author {
+    text-decoration: underline;
+    color: #272E4B;
+}
+
+.news__count {
+    margin: 10px 0 0 0;
+    display: block;
+}

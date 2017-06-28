@@ -9,50 +9,60 @@ var my_news = [{
     {
         author: 'Tuuli Korpi',
         text: 'Creativity time for us people...'
+    },
+    {
+        author: 'Krista Luuminki',
+        text: 'Suomi 100'
     }
-
 ];
 
+var Article = React.createClass({
+    render: function() {
+        var author = this.props.lastNews.author,
+            text = this.props.lastNews.text;
+
+        return (
+            <div className="article">
+                <p className="news__author">{author}:</p>
+                <p className="news__text">{text}</p>
+            </div>
+        )
+    }
+});
 
 var News = React.createClass({
             render: function() {
-                var last_news = this.props.last_news;
-                var newsTemplate = last_news.map(function(item, index){
+                var lastNews = this.props.lastNews;
+                var lastNewsLength = lastNews.length;
+                var newsTemplate;
+                
+                if (lastNewsLength > 0) {
+                    newsTemplate = lastNews.map(function(item, index){
                     return (
                         <div key={index}>
-                            <hr />
-                            <h2 className="news_author">{item.author}:</h2>
-                            <p className="news_text">{item.text}</p>
-                            <hr />
+                            <Article lastNews={item} />
                         </div>
                     )
-                })
+                }) 
+                } else {
+                    newsTemplate = <p>Sorry, no News.</p>
+                }
 
                 return ( 
                 <div className = "news">
-                    {newsTemplate} 
+                    {newsTemplate}
+                    <strong className={'news__count' + (lastNewsLength > 0 ? '':' none')}>Total News: {lastNewsLength}</strong> 
                 </div>
                     );
                 }
-            });
+});
 
-        var Comments = React.createClass({
-            render: function() {
-                return ( 
-                <div className = "comments">
-                    No news - no comments.
-                </div>
-                );
-            }
-        });
-
-        var App = React.createClass({
+var App = React.createClass({
             render: function() {
                 return ( 
                 <div className = "app">
-                    Hello all, I 'm App component! I can display news! 
-                    <News last_news = { my_news } /> {/* Add data property */} 
-                    <Comments />
+                    <h1>News</h1>
+                    <News lastNews = {my_news} /> {/* Add data property */} 
                 </div>
                 );
             }
