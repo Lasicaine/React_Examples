@@ -3,7 +3,7 @@
 }
 
 body {
-    background: rgba(177, 182, 186, 0.38);
+    background: #EFF0F4;
     font-family: sans-serif;
 }
 
@@ -12,18 +12,17 @@ p {
 }
 
 .article {
-    background: #66B2E6;
-    border: 1px solid rgba(0, 89, 181, 0.82);
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
     width: 600px;
     margin: 0 0 5px;
-    box-shadow: 2px 2px 5px -1px rgb(0, 81, 202);
     padding: 3px 5px;
-    color: #F8F8FA;
+    color: #767676;
 }
 
 .news__author {
-    text-decoration: underline;
-    color: #272E4B;
+    font-weight: bold;
+    color: #000000;
 }
 
 .news__count {

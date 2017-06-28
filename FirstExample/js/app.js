@@ -1,18 +1,22 @@
 var my_news = [{
         author: 'Steve Strubb',
-        text: 'I like this in the Summer...'
+        text: 'Ovatko suomalaiset tutkijat kehnoja hakijoita vai missä vika – eurooppalainen tutkimusrahoitus jää usein saamatta',
+        bigText: 'Euroopan tutkimusneuvosto (ERC) myöntää rahoitusta huippututkijoille ja heidän ryhmilleen uraauurtavaan tieteen tekoon pari miljardia euroa vuodessa. Suomalaisilla on huomattavasti parannettavaa ERC-rahoituksen hakemisessa.'
     },
     {
         author: 'John Doe',
-        text: 'When do you next lesson?'
+        text: 'Näin maatalous muuttuu: härkäpapua viljellään jo enemmän kuin perunaa',
+        bigText: 'Valkuaispitoinen suosikkikasvi härkäpapu maistuu niin ihmisille kuin tuotantoeläimille.'
     },
     {
         author: 'Tuuli Korpi',
-        text: 'Creativity time for us people...'
+        text: 'Koko kesä asunnottomana Saimaalla – "Elämässä täytyy tehdä muutakin kuin töitä"',
+        bigText: 'Retkeilijä Olli Järvenkylä on tämän kesän onnellisesti työtön ja koditon. Mies aloitti sadan päivän mittaisen retkensä Saimaalla heti jäiden lähdettyä.'
     },
     {
         author: 'Krista Luuminki',
-        text: 'Suomi 100'
+        text: 'Marcus Grönholm palaa Toyotan rattiin Jyväskylän MM-rallissa: ”Tulee aika jännää”',
+        bigText: 'Grönholmin rallitallin järjestämä tempaus on eräänlaisen ympyrän sulkeutuminen, sillä rallilegenda ajoi uransa ensimäisen MM-rallien pohja-ajan juuri Harjulla 25 vuotta sitten.'
     }
 ];
 
