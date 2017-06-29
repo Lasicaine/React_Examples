@@ -17,15 +17,20 @@ p {
     width: 600px;
     margin: 0 0 5px;
     padding: 3px 5px;
-    color: #767676;
+    font-weight: bold;
+    color: #000000;
 }
 
 .news__author {
-    font-weight: bold;
-    color: #000000;
+    color: #767676;
 }
 
 .news__count {
     margin: 10px 0 0 0;
     display: block;
+}
+
+.news__big-text {
+    color: #000000;
+    font-weight: normal;
 }
