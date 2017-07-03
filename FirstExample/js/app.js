@@ -88,11 +88,43 @@ var News = React.createClass({
                 }
 });
 
+var TestInput = React.createClass({
+
+    getInitialState: function() {
+        return {
+            myValue: ''
+        };
+    },
+
+    onChangeHandler: function(e) {
+        this.setState({myValue: e.target.value})
+    },
+
+    onBtnClickHandler: function() {
+        alert(this.state.myValue);
+    },
+
+    render: function() {
+        return (
+            <div>
+                <input
+                    className='test-input'
+                    value={this.state.myValue}
+                    onChange={this.onChangeHandler}
+                    placeholder='Enter value'
+                />
+                <button onClick={this.onBtnClickHandler}>Open alert</button>
+            </div>
+        );
+    }
+});
+
 var App = React.createClass({
             render: function() {
                 return ( 
                 <div className = "app">
                     <h1>News</h1>
+                    <TestInput />
                     <News lastNews = {my_news} /> {/* Add data property */} 
                 </div>
                 );

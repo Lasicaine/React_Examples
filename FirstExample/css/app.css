@@ -34,3 +34,7 @@ p {
     color: #000000;
     font-weight: normal;
 }
+
+.test-input {
+    margin: 0 5px 5px 0;
+}
